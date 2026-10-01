@@ -1,0 +1,2116 @@
+{
+ "rows": [
+  {
+   "repo": "astropy/astropy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "astropy/astropy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "astropy/astropy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "astropy/astropy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "astropy/astropy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "astropy/astropy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "django/django",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "matplotlib/matplotlib",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "mwaskom/seaborn",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "mwaskom/seaborn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "mwaskom/seaborn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "mwaskom/seaborn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "pallets/flask",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pallets/flask",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "pallets/flask",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "psf/requests",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "psf/requests",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "psf/requests",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "psf/requests",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "psf/requests",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "psf/requests",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "pydata/xarray",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "pydata/xarray",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "pydata/xarray",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pydata/xarray",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pydata/xarray",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pylint-dev/pylint",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pylint-dev/pylint",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "pylint-dev/pylint",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pylint-dev/pylint",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pylint-dev/pylint",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pylint-dev/pylint",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "pytest-dev/pytest",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "scikit-learn/scikit-learn",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sphinx-doc/sphinx",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 1.0,
+   "mix20": 1.0,
+   "hop20": 1.0
+  },
+  {
+   "repo": "sympy/sympy",
+   "n": 1,
+   "lex20": 0.0,
+   "mix20": 0.0,
+   "hop20": 0.0
+  }
+ ],
+ "overall": {
+  "n": 290,
+  "per_repo": {
+   "astropy/astropy": {
+    "n": 6,
+    "lex20": 0.6666666666666666,
+    "mix20": 0.6666666666666666,
+    "hop20": 0.6666666666666666
+   },
+   "django/django": {
+    "n": 108,
+    "lex20": 0.5185185185185185,
+    "mix20": 0.5370370370370371,
+    "hop20": 0.5370370370370371
+   },
+   "matplotlib/matplotlib": {
+    "n": 23,
+    "lex20": 0.4782608695652174,
+    "mix20": 0.391304347826087,
+    "hop20": 0.391304347826087
+   },
+   "mwaskom/seaborn": {
+    "n": 4,
+    "lex20": 0.75,
+    "mix20": 0.75,
+    "hop20": 0.75
+   },
+   "pallets/flask": {
+    "n": 3,
+    "lex20": 0.6666666666666666,
+    "mix20": 0.6666666666666666,
+    "hop20": 0.6666666666666666
+   },
+   "psf/requests": {
+    "n": 6,
+    "lex20": 0.6666666666666666,
+    "mix20": 0.6666666666666666,
+    "hop20": 0.6666666666666666
+   },
+   "pydata/xarray": {
+    "n": 5,
+    "lex20": 0.4,
+    "mix20": 0.4,
+    "hop20": 0.4
+   },
+   "pylint-dev/pylint": {
+    "n": 6,
+    "lex20": 0.16666666666666666,
+    "mix20": 0.16666666666666666,
+    "hop20": 0.16666666666666666
+   },
+   "pytest-dev/pytest": {
+    "n": 16,
+    "lex20": 0.4375,
+    "mix20": 0.4375,
+    "hop20": 0.4375
+   },
+   "scikit-learn/scikit-learn": {
+    "n": 23,
+    "lex20": 0.7391304347826086,
+    "mix20": 0.7391304347826086,
+    "hop20": 0.7391304347826086
+   },
+   "sphinx-doc/sphinx": {
+    "n": 16,
+    "lex20": 0.375,
+    "mix20": 0.1875,
+    "hop20": 0.1875
+   },
+   "sympy/sympy": {
+    "n": 74,
+    "lex20": 0.40540540540540543,
+    "mix20": 0.3918918918918919,
+    "hop20": 0.3918918918918919
+   }
+  }
+ },
+ "sign_test": {
+  "improved": 15,
+  "worsened": 19,
+  "p": 0.6075913612730801
+ }
+}

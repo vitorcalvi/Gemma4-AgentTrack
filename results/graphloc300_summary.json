@@ -1,0 +1,8 @@
+{
+ "instances": 300,
+ "graph_coverage": 0.9666666666666667,
+ "pct_targets_private": 0.07142857142857142,
+ "median_best_lexical_rank": 32.0,
+ "pct_lexical_rank_gt_1000": 0.20333333333333334,
+ "pct_lexical_rank_gt_100": 0.39
+}

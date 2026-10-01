@@ -1,0 +1,43 @@
+{
+ "n_rows": 636,
+ "resolved_given_edited": {
+  "p": 0.5679442508710801,
+  "ci": [
+   0.5101085030832706,
+   0.6239851066341839
+  ],
+  "n": 287
+ },
+ "resolved_given_not_edited": {
+  "p": 0.06876790830945559,
+  "ci": [
+   0.04664371096924989,
+   0.10028227508228144
+  ],
+  "n": 349
+ },
+ "mcnemar_localization": 1.892579550800977e-17,
+ "adherence": {
+  "n_retrievable": 163,
+  "p_adhered": 0.5337423312883436,
+  "p_gap": 0.4662576687116564,
+  "gap_locations": {
+   "wrong_file": 40,
+   "no_patch": 32,
+   "gold_file": 4
+  },
+  "gap_failures": {
+   "target tests fail": 35,
+   "error": 4,
+   "time budget": 27,
+   "tool budget": 1,
+   "resolved": 3,
+   "other": 5,
+   "only other tests fail": 1
+  }
+ },
+ "top5": 0.3836477987421384,
+ "top15": 0.5125786163522013,
+ "base_ran_tests": 0.16666666666666666,
+ "skill_ran_tests": 0.1320754716981132
+}

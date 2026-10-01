@@ -1,0 +1,21 @@
+{
+  "title": "GraphLoc-300 labels and graph benchmarks",
+  "id": "coachvitorcalvi/graphloc-300-labels",
+  "licenses": [
+    {
+      "name": "CC0-1.0"
+    }
+  ],
+  "keywords": [
+    "code-graph",
+    "bug-localization",
+    "swe-bench",
+    "call-graph",
+    "software-engineering",
+    "agents",
+    "retrieval"
+  ],
+  "subtitle": "Per-instance bug-localization labels and code-graph expansion benchmarks",
+  "description": "Companion resource for two writeups submitted to the Google Gemma 4 Developer Agent Paper Track.\n\n(a) graphloc300.jsonl: function-level gold localization labels for all 300 SWE-bench Lite instances with per-instance difficulty labels.\n(b) coverage.json, hop_scale.json, hop_profile.json: coverage-vs-budget curves, pool-cap sweeps, hop-distance profiles.\n(c) disentangle.json, cross_repo.json, crossover.json: controlled ablations that separate seed-set SIZE from graph-aware ORDERING, and locate the budget at which each configuration wins. These underpin the paper's self-correction: at review budgets of 20-50 the graph-aware ordering is no better than plain BM25, and the usable configuration is budget-dependent.\n(d) eval_suite.json, rerank.json, rank_search.json: accuracy@k comparisons plus the reported negative results (learned reranker, seed consensus, PageRank fusion, task triage, unbounded expansion).\n(e) adherence.json, e2e_runs.csv: the end-to-end agent run log behind the adherence-gap analysis.\n(f) paper1_resource.pdf, paper2_application.pdf: the two arXiv-ready papers with figures.\n(g) graphloc_seed_expansion.executed.ipynb: the executed notebook; regenerates every reported number on CPU in under three minutes, no GPU, no LLM, no paid API.\n(h) src/ and skill/graph-locate/: full experiment source and a working ADK localization skill.",
+  "resources": []
+}
