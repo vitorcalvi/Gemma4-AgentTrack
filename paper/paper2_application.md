@@ -1,4 +1,4 @@
-# The Adherence Gap: Retrieval Is Not the Bottleneck for Graph-Augmented Coding Agents
+# The Adherence Gap: Retrieval Is Not the Bottleneck for Coding Agents
 
 **Vitor Calvi** · Kaggle: *Google — The Gemma 4 Developer Agent Paper Track* · 30 September 2026
 *Target award: Best New Application ($10,000)*
