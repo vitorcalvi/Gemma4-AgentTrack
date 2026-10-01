@@ -147,12 +147,19 @@ async def apply_stealth(page) -> None:
 async def save_session(ctx):
     """Persist cookies: they are a live credential, so keep them private."""
     try:
-        STATE.write_text(json.dumps({"cookies": await ctx.cookies()}),
-                         encoding="utf-8")
+        cookies = await ctx.cookies()
+        STATE.write_text(json.dumps({"cookies": cookies}), encoding="utf-8")
         os.chmod(STATE, 0o600)
-        print("  session saved ->", STATE.name)
-    except Exception as e:
-        print("  could not save session:", str(e)[:80])
+        if any(c.get("name") == "ka_session"
+               or "kaggle.com" in (c.get("domain") or "")
+               for c in cookies):
+            print("  valid Kaggle session captured ->", STATE.name)
+        else:
+            print("  session saved ->", STATE.name)
+    except Exception:
+        # Silently ignore closed-context errors: if the file was already written
+        # by an earlier loop iteration, there is nothing more to do here.
+        pass
 
 
 async def signed_in(page) -> bool:
@@ -180,10 +187,33 @@ async def interactive_login(browser):
     print("Google sign-in is fine. Then CLOSE the window when done.\n")
     await page.goto("https://www.kaggle.com/account/login",
                     wait_until="domcontentloaded", timeout=120000)
-    while not page.is_closed():
-        await page.wait_for_timeout(2000)
-    await save_session(ctx)
-    await ctx.close()
+    try:
+        while True:
+            try:
+                page_alive = not page.is_closed()
+                ctx_alive = bool(ctx.pages)
+            except Exception:
+                # Page/context handles already torn down: stop polling.
+                break
+            if not page_alive and not ctx_alive:
+                break
+            try:
+                if await ctx.cookies():
+                    await save_session(ctx)
+            except Exception:
+                # Cookies call failed mid-loop (e.g. context closed between
+                # checks); ignore and try again next tick.
+                pass
+            await asyncio.sleep(2)
+    except Exception:
+        # TargetClosedError or anything else during the loop: exit cleanly so
+        # the final save_session below still flushes whatever we already have.
+        pass
+    await save_session(ctx)  # final flush; save_session swallows its own errors
+    try:
+        await ctx.close()
+    except Exception:
+        pass
     print("login captured.\n")
 
 
