@@ -154,7 +154,7 @@ Coverage is identical for pool caps of 200, 800 and ∞ at budgets 50 and 200, a
 
 ## 5. Negative results
 
-![Ranking rules compared](figures/fig_negatives.png)
+![Ranking rules compared](https://raw.githubusercontent.com/vitorcalvi/Gemma4-AgentTrack/main/figures/fig_negatives.png)
 
 We tested five alternatives to "BM25 seeds, depth-ordered". All fail. We report them because a positive result that survives only because nobody tried the obvious alternatives is not a result.
 

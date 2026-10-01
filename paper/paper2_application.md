@@ -60,9 +60,9 @@ We report Wilson 95% intervals for all proportions. For unpaired 2×2 comparison
 | Agent edited the gold function | **163/287 = 0.568** | [0.510, 0.624] |
 | Agent did not | 24/349 = 0.069 | [0.047, 0.100] |
 
-![Resolve rate conditioned on editing the gold function](figures/fig_adherence.png)
+![Resolve rate conditioned on editing the gold function](https://raw.githubusercontent.com/vitorcalvi/Gemma4-AgentTrack/main/figures/fig_adherence.png)
 
-|Risk ratio **8.26×** (95% CI [5.55, 12.28], Fisher's exact test p = 1.17e-45, Pearson's chi-square = 187.6, p = 1.71e-42). Editing the right function is not a heuristic; it is very nearly a precondition for success. Symmetrically, a task the agent abandons without a patch (`no_patch`) resolves at 1.5%. (The paired baseline-vs-skill comparison is in Section 4.4: McNemar p = 0.78.)
+Risk ratio **8.26×** (95% CI [5.55, 12.28], Fisher's exact test p = 1.17e-45, Pearson's chi-square = 187.6, p = 1.71e-42). Editing the right function is not a heuristic; it is very nearly a precondition for success. Symmetrically, a task the agent abandons without a patch (`no_patch`) resolves at 1.5%. (The paired baseline-vs-skill comparison is in Section 4.4: McNemar p = 0.78.)
 
 ### 4.2 The adherence gap
 
@@ -73,7 +73,7 @@ Restricting to the 163 runs where the retriever's top-15 *contained* the gold fu
 | Agent edited it | 87 | 0.534 | [0.457, 0.609] |
 | **Agent ignored it** | **76** | **0.466** | [0.391, 0.543] |
 
-![The adherence gap](figures/fig_gap.png)
+![The adherence gap](https://raw.githubusercontent.com/vitorcalvi/Gemma4-AgentTrack/main/figures/fig_gap.png)
 
 **In nearly half of all runs where the answer was available, the agent did not use it.** Where did those 76 runs go?
 
