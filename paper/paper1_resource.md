@@ -1,4 +1,4 @@
-# Where Does the Graph Help? Seed Expansion for Function-Level Bug Localization on Repository Code Graphs
+# Where Does the Graph Help? Seed Expansion on Repository Code Graphs
 
 **Vitor Calvi** · Kaggle: *Google — The Gemma 4 Developer Agent Paper Track* · 30 September 2026
 *Target award: Best New Resource ($10,000) / Overall Best Paper ($15,000)*
