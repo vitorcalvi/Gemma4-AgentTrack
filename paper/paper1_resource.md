@@ -13,27 +13,29 @@ Code-structure artifacts — call graphs, import graphs, node embeddings — are
 
 ## 1. Introduction
 
-A coding agent given a bug report must answer one question before it can write a patch: *which function do I edit?* Modern repository-level agents answer it with graph structure. The Gemma 4 Developer Agent competition exposes `get_code_neighbors`, `search_similar_code`, and `get_code_subgraph` over a per-repository code graph, and its organizers explicitly invite research on "code-graph generation, parsing, and embedding" and "graph reasoning". Meanwhile the localization literature reports accuracy@k for retrieval methods on SWE-bench without ever publishing the *per-instance geometry* those numbers summarize.
+A coding agent given a bug report must answer one question: *which function do I edit?* Modern repository-level agents answer it with graph structure. The Gemma 4 Developer Agent competition exposes `get_code_neighbors`, `search_similar_code`, and `get_code_subgraph` over a per-repository code graph, inviting research on "code-graph generation, parsing, and embedding" and "graph reasoning". Yet the localization literature reports accuracy@k on SWE-bench without publishing the *per-instance geometry* those numbers summarize.
 
-That omission is costly. Two papers can report "acc@10 = 0.45" on the same benchmark with no way to tell whether one is easier, whether both are near a ceiling, or where the remaining failures live. We fill that gap. Our contribution is a **reusable, fully specified difficulty benchmark** for function-level localization on repository code graphs, plus the measurements it makes possible.
+Two papers can report "acc@10 = 0.45" on the same benchmark with no way to tell whether either is near a ceiling. We fill that gap with a **reusable, fully specified difficulty benchmark** for function-level localization on repository code graphs.
+
+Compact open-weights models such as Gemma 4 (9B/27B) carry strict attention budgets and degrade when flooded with full-file contexts or broad candidate lists; seed expansion prunes to a top-5 hop-stratified neighbourhood matched to those windows.
 
 We make three claims, each measured on all 300 instances:
 
-- **C1 (the task shape).** Localization here is single-target search, not multi-site editing. 80.7% of reference patches modify exactly one function in exactly one file, and that function is present in the provided graph essentially always. Graph *coverage* is solved; graph *ranking* is not.
-- **C2 (the mechanism).** Lexical retrieval fails on a third of tasks because of a systematic vocabulary mismatch we call public-API / private-implementation divergence: the issue names a public symbol, the patch edits a private helper it calls. In our worked example the issue is written entirely about `separability_matrix`, which BM25 ranks **first**, while the patch edits `_cstack`, which BM25 ranks **5,758** of 8,452, three call hops away in the same file.
+- **C1 (the task shape).** Localization here is single-target search. 80.7% of patches modify exactly one function in one file, present in the provided graph essentially always. Graph *coverage* is solved; graph *ranking* is not.
+- **C2 (the mechanism).** Lexical retrieval fails on a third of tasks because of a vocabulary mismatch we call public-API / private-implementation divergence: the issue names a public symbol, the patch edits a private helper it calls. In our worked example the issue concerns `separability_matrix`, BM25-ranked **first**, while the patch edits `_cstack`, BM25-ranked **5,758** of 8,452, three call hops away in the same file.
 - **C3 (the fix, and its limit).** One to three hops of explicit expansion over the call graph converts that mismatch into recall — coverage@50 rises 0.379 → 0.562 with zero regressions. But *ordering* the expanded pool is unsolved: five ranking strategies, including a learned one, all fail to beat plain BM25.
 
 We report C3's limit as prominently as its gain.
 
 ## 2. Related work
 
-**Repository-level retrieval.** RepoCoder (Zhang et al., 2023) frames repository context as an iterative retrieve-and-generate loop and shows structure-aware chunking over AST nodes beats fixed windows. RepoFuse (Shrivastava et al., 2023) fuses lexical similarity with repository-level data-flow into a single context vector. CodeRAG-Bench (Wang et al., 2025) is the closest diagnostic: it sweeps retrieval sources and reports that "current retrievers still struggle to fetch useful contexts especially with limited lexical overlap." Our C2 is a precise, instance-level instance of that observation, and our expansion result is a structural response to it.
+**Repository-level retrieval.** RepoCoder (Zhang et al., 2023) frames repository context as an iterative retrieve-and-generate loop and shows AST chunking beats fixed windows. RepoFuse (Shrivastava et al., 2023) fuses lexical similarity with repository-level data-flow into a single context vector. CodeRAG-Bench (Wang et al., 2025) sweeps retrieval sources and reports that "current retrievers still struggle to fetch useful contexts especially with limited lexical overlap." Our C2 is a precise, instance-level version; our expansion result is a structural response.
 
-**Graph representations of code.** GraphCodeBERT (Guo et al., 2020) showed that adding data-flow edges to CodeBERT improves code search and clone detection — the canonical evidence that structural priors transfer. CodeNav (Gupta et al., 2024) navigates repositories with an LLM agent over a graph-structured index. We differ in kind: we build no learned representation and train no model. We ask whether the *raw* graph, used as a deterministic expansion operator, is already worth something.
+**Graph representations of code.** GraphCodeBERT (Guo et al., 2020) showed that adding data-flow edges to CodeBERT improves code search and clone detection — canonical evidence that structural priors transfer. CodeNav (Gupta et al., 2024) navigates repositories with an LLM agent over a graph-structured index. We differ in kind: no learned representation, no trained model. We ask whether the *raw* graph, as a deterministic expansion operator, is already worth something.
 
-**SWE agents.** SWE-agent (Yang et al., 2024) established that the agent-computer interface, not just the model, drives resolve rate. AutoCodeRover (Zhang et al., 2024) adds a search-and-repair loop over an AST index. Both search. Neither publishes where the search fails or why, which is the gap this benchmark fills.
+**SWE agents.** SWE-agent (Yang et al., 2024) established that the agent-computer interface, not the model alone, drives resolve rate. AutoCodeRover (Zhang et al., 2024) adds a search-and-repair loop over an AST index. Neither publishes where the search fails — the gap this benchmark fills.
 
-**Bug localization.** Traditional approaches combine information flow with spectrum-based fault localization; they assume a test signal, which is precisely what is unavailable before the agent starts editing. We assume no tests.
+**Bug localization.** Traditional approaches combine information flow with spectrum-based fault localization; they assume a test signal, precisely what is unavailable before the agent edits.
 
 ## 3. Method
 
@@ -179,13 +181,14 @@ Why this is worth releasing: every localization paper reports accuracy@k, but **
 ## 7. Limitations
 
 * **One graph builder.** All edges come from a single static extractor; conclusions need not transfer to data-flow edges or other languages.
-* **Coverage is computed, not executed.** We verify the gold symbol exists as a node but never run the reference patch, so we claim only that a ranking surfaces the right function, not that it yields a correct patch.
-* **BM25 is a strong but not modern control.** No public checkpoint embeds this exact `codegraph/v1` node set, so we did not compare against a dense retriever.
+* **Coverage is computed, not executed.** We verify the gold symbol exists as a node but never run the reference patch; we claim only that a ranking surfaces the right function, not that it yields a correct patch.
+* **BM25 is dated.** No public checkpoint embeds this `codegraph/v1` node set, so a dense retriever comparison was infeasible.
 * **No end-to-end claim.** Resolve rate is out of scope; the companion submission measures the agent side.
+* **Gemma 4 fit.** k=5 yields the hop-stratified top-5 neighbourhood suited to a Gemma 4 (9B/27B) window.
 
 ## 8. Conclusion
 
-Repository code graphs are usually justified by intuition. We measured the intuition, and on the way we corrected our own first reading of it. Expanding a *large* lexical seed set lifts reviewable recall from 0.38 to 0.56 at a 50-item budget with zero regressions — but a controlled ablation shows that gain is a bigger pool, not better order: at budgets of 20–50 the graph-aware ordering is **no better than plain BM25** (p = 0.61). What dominates at tight budgets is a *small* seed set: k = 5 is the only setting ahead of lexical at B = 10 (0.410 vs 0.379), while k = 1 collapses to 0.276 because one wrong seed amplifies its own error. Graph proximity is good *coverage* and bad *ranking*, and the useful configurations are budget-dependent. Reporting that precisely, with per-instance labels anyone can measure against, is the contribution.
+Repository code graphs are usually justified by intuition; we measured it and corrected our first reading on the way. A *large* lexical seed set lifts reviewable recall from 0.38 to 0.56 at a 50-item budget with zero regressions — but a controlled ablation shows the lift is a bigger pool, not better order: at budgets of 20–50 the graph-aware ordering is **no better than plain BM25** (p = 0.61). At tight budgets a *small* seed set dominates: k = 5 is the only setting ahead of lexical at B = 10 (0.410 vs 0.379); k = 1 collapses to 0.276 because one wrong seed amplifies error. Graph proximity is good *coverage*, bad *ranking*. Per-instance labels anyone can measure against is the contribution.
 
 ### Citation
 
