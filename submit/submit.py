@@ -237,6 +237,129 @@ async def do_join(page):
     print("  (no join control found; may already be joined)")
 
 
+# Selector priority lists for Kaggle's many writeup-editor implementations.
+# Kaggle has shipped at least five different editor backends in the last few
+# years (plain textarea, Slate, ProseMirror, generic contenteditable, ARIA
+# textbox). We try each one in order; the first visible match wins.
+BODY_SELECTORS = (
+    'textarea[name="content"]',
+    'div[contenteditable="true"]',
+    'div[role="textbox"]',
+    'div.ProseMirror',
+    'div[data-slate-editor="true"]',
+    'textarea',
+)
+TITLE_SELECTORS = (
+    'input[name="title"]',
+    'input[aria-label*="title" i]',
+    'input[placeholder*="title" i]',
+    'input[data-testid*="title" i]',
+    'input[id*="title" i]',
+)
+SUBTITLE_SELECTORS = (
+    'input[name="subtitle"]',
+    'input[aria-label*="subtitle" i]',
+    'input[placeholder*="subtitle" i]',
+    'input[data-testid*="subtitle" i]',
+    'input[id*="subtitle" i]',
+)
+# Kaggle has used every one of these labels for the "open the writeup editor"
+# action over the years. Match broadly; the first visible hit wins.
+WRITEUP_BUTTON_LABELS = (
+    "New Writeup", "Your Writeup", "Create Writeup", "Add Writeup",
+    "Post Writeup", "New Write-Up", "Start Writeup", "Write a Writeup",
+)
+# These appear on the rules-acceptance modal that blocks the page when the
+# user has not yet agreed to the competition rules. Dismiss it before we
+# try to open the editor.
+RULES_LABELS = (
+    "I Understand and Agree", "I Agree", "Accept Rules",
+    "Join Competition", "Join Hackathon",
+)
+
+
+async def _dump_visible(page, label: str) -> None:
+    """Diagnostic: snapshot the page and dump visible buttons + headings.
+
+    Always writes ``/tmp/writeup_debug_failed.png`` and prints a concise
+    inventory of buttons, links and headings so a failed submission can be
+    diagnosed without re-running the script.
+    """
+    try:
+        await page.screenshot(path="/tmp/writeup_debug_failed.png", full_page=True)
+        print(f"  debug screenshot -> /tmp/writeup_debug_failed.png ({label})")
+    except Exception as e:
+        print(f"  could not write debug screenshot: {str(e)[:80]}")
+    try:
+        body_text = (await page.inner_text("body"))[:1500]
+        print(f"\n  [{label}] visible body text (first 1500 chars):\n{body_text}\n")
+    except Exception as e:
+        print(f"  could not read body text: {str(e)[:80]}")
+    try:
+        btns = await page.evaluate("""() => {
+            const out = [];
+            for (const b of document.querySelectorAll('button, a, [role="button"]')) {
+                const t = (b.innerText || b.textContent || '').trim();
+                if (t && t.length < 120) out.push(t);
+            }
+            return out.slice(0, 80);
+        }""")
+        print(f"  [{label}] visible buttons/links ({len(btns)}):")
+        for b in btns:
+            print(f"    - {b}")
+    except Exception as e:
+        print(f"  could not enumerate buttons: {str(e)[:80]}")
+    try:
+        heads = await page.evaluate("""() => {
+            return Array.from(document.querySelectorAll('h1, h2, h3'))
+                        .map(h => (h.innerText || '').trim())
+                        .filter(Boolean).slice(0, 30);
+        }""")
+        print(f"  [{label}] headings ({len(heads)}):")
+        for h in heads:
+            print(f"    H> {h}")
+    except Exception:
+        pass
+
+
+async def _click_label(page, labels) -> bool:
+    """Click the first visible element whose text matches any of ``labels``."""
+    for label in labels:
+        try:
+            el = page.get_by_text(label, exact=False).first
+            if await el.count() and await el.is_visible():
+                await el.click()
+                return True
+        except Exception as e:
+            print(f"  click({label!r}) failed: {str(e)[:80]}")
+    return False
+
+
+async def _wait_for_editor(page, timeout_ms: int = 30000) -> bool:
+    """Poll the DOM until any BODY_SELECTORS resolves and is visible.
+
+    Returns True as soon as one is found, False on timeout. A polling loop
+    is required: a fixed ``wait_for_timeout`` after clicking the launcher
+    button is too flaky for the slow SPA route change Kaggle's writeup
+    editor uses.
+    """
+    loop = asyncio.get_event_loop()
+    deadline = loop.time() + timeout_ms / 1000
+    while loop.time() < deadline:
+        for sel in BODY_SELECTORS:
+            try:
+                el = page.locator(sel).first
+                if await el.count() and await el.is_visible():
+                    return True
+            except Exception:
+                continue
+        try:
+            await page.wait_for_timeout(500)
+        except Exception:
+            break
+    return False
+
+
 async def submit_paper(page, num, dry_run=False):
     p = PAPERS[num]
     title, subtitle, body = strip_front_matter(p["body"].read_text(encoding="utf-8"))
@@ -250,44 +373,105 @@ async def submit_paper(page, num, dry_run=False):
     if dry_run:
         return
 
-    # navigate to the writeups area
+    # navigate to the writeups area. If the editor fields aren't already on
+    # the page after the SPA boots, click any "New Writeup" / "Create" /
+    # "Add" / "Your Writeup" / "Post Writeup" button and poll for the
+    # editor container to appear.
+    landed = False
     for url in (f"https://www.kaggle.com/competitions/{COMP}/writeups",
                 f"https://www.kaggle.com/competitions/{COMP}/overview"):
-        await page.goto(url, wait_until="domcontentloaded", timeout=120000)
-        await page.wait_for_timeout(5000)
-        if await page.get_by_text("New Writeup", exact=False).count():
+        try:
+            await page.goto(url, wait_until="domcontentloaded", timeout=120000)
+        except Exception as e:
+            print("  goto failed:", str(e)[:80])
+            continue
+        await page.wait_for_timeout(4000)
+
+        # If a Join / Accept Rules modal is up, dismiss it before looking for
+        # the writeup-launch button. The modal sits on top of everything else
+        # and silently blocks every interaction underneath.
+        if await _click_label(page, RULES_LABELS):
+            print("  dismissed rules modal ->", page.url)
+            try:
+                await page.wait_for_timeout(4000)
+            except Exception:
+                pass
+
+        # Maybe the editor is already on the page (e.g. we arrived on the
+        # /writeup/new or /writeups/{id}/edit URL). If so, we don't need to
+        # click anything.
+        if await _wait_for_editor(page, timeout_ms=4000):
+            landed = True
+            print("  editor already present on landing page")
             break
-    for label in ("New Writeup", "Create Writeup", "Add writeup"):
-        el = page.get_by_text(label, exact=False).first
-        if await el.count() and await el.is_visible():
-            await el.click()
-            await page.wait_for_timeout(6000)
-            break
+
+        # Otherwise click the first visible writeup-launch button.
+        clicked_label = None
+        for label in WRITEUP_BUTTON_LABELS:
+            try:
+                el = page.get_by_text(label, exact=False).first
+                if await el.count() and await el.is_visible():
+                    await el.click()
+                    clicked_label = label
+                    break
+            except Exception as e:
+                print(f"  click({label!r}) failed:", str(e)[:80])
+        if clicked_label:
+            print(f"  clicked writeup-launcher: {clicked_label!r}")
+            # Wait for the editor container to materialise after the click.
+            # The SPA route change is slow; a polling loop is more reliable
+            # than a fixed wait.
+            if await _wait_for_editor(page, timeout_ms=30000):
+                landed = True
+                break
+        # Else: this URL didn't expose a launcher; try the next one.
+
     print("  writeup editor ->", page.url)
-
-    # title / subtitle
-    for sel, val in (('input[name="title"]', title),
-                     ('input[placeholder*="Title" i]', title)):
-        el = page.locator(sel).first
-        if await el.count():
-            await el.fill(val)
-            break
-    for sel in ('input[name="subtitle"]', 'input[placeholder*="ubtitle" i]'):
-        el = page.locator(sel).first
-        if await el.count():
-            await el.fill(subtitle or p["subtitle"])
-            break
-
-    # body: prefer a contenteditable / textarea editor
-    target = None
-    for sel in ('div[contenteditable="true"]', 'textarea[name="content"]',
-                'div[role="textbox"]', 'textarea'):
-        el = page.locator(sel).first
-        if await el.count() and await el.is_visible():
-            target = el
-            break
-    if target is None:
+    if not landed:
+        await _dump_visible(page, "no-editor-after-launch")
         raise SystemExit("could not locate the writeup body editor")
+
+    # title
+    title_filled = False
+    for sel in TITLE_SELECTORS:
+        try:
+            el = page.locator(sel).first
+            if await el.count() and await el.is_visible():
+                await el.fill(title)
+                title_filled = True
+                break
+        except Exception as e:
+            print(f"  title fill via {sel!r} failed:", str(e)[:80])
+    if not title_filled:
+        await _dump_visible(page, "no-title-input")
+        print("  WARNING: could not locate the writeup title input")
+
+    # subtitle (best-effort; many writeups don't have one)
+    for sel in SUBTITLE_SELECTORS:
+        try:
+            el = page.locator(sel).first
+            if await el.count() and await el.is_visible():
+                await el.fill(subtitle or p["subtitle"])
+                break
+        except Exception as e:
+            print(f"  subtitle fill via {sel!r} failed:", str(e)[:80])
+
+    # body: try every Kaggle editor variant we know about
+    target = None
+    target_sel = None
+    for sel in BODY_SELECTORS:
+        try:
+            el = page.locator(sel).first
+            if await el.count() and await el.is_visible():
+                target = el
+                target_sel = sel
+                break
+        except Exception:
+            continue
+    if target is None:
+        await _dump_visible(page, "no-body-editor")
+        raise SystemExit("could not locate the writeup body editor")
+    print(f"  body editor matched: {target_sel}")
     await target.click()
     await page.keyboard.insert_text(body)
     await page.wait_for_timeout(2000)
